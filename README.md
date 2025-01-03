@@ -1,4 +1,4 @@
-# Consumer Preference Analysis for Apparel Brands in Malaysia
+# Predictive Consumer Preference Analysis for Clothing Brands in Malaysia
 
 This project investigates consumer preferences and decision-making processes among Malaysian buyers, focusing on the choice between three popular apparel brands: **H&M**, **Uniqlo**, and **Brand Outlet**.
 

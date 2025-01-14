@@ -1,6 +1,6 @@
 # Predictive Consumer Preference Analysis for Clothing Brands in Malaysia
 
-This project investigates consumer preferences and decision-making processes among Malaysian buyers, focusing on their selection between three popular apparel brands: **H&M**, **Uniqlo**, and **Brand Outlet**.
+This project investigates consumer preferences and decision-making processes among Malaysian buyers, focusing on their selection between three popular apparel brands: **H&M**, **Uniqlo**, and **Brands Outlet**.
 
 ## Project Overview
 The study employs a combination of qualitative and quantitative methods to uncover the key factors influencing consumer decisions, including:
@@ -18,7 +18,7 @@ Data was collected via structured surveys targeting Malaysian consumers. The sur
 The study analyzed user preferences for H&M, Uniqlo, and Brand Outlet. To evaluate the performance of the predictive model, **K-Fold Cross-Validation (KF-CV)** with **k=5** was applied. The dataset was split into five folds, ensuring all data points were used for both training and testing during the validation process. 
 
 The final model was chosen based on the iteration with the **highest testing accuracy**, ensuring robust performance on unseen data. Key results include:
-- An average **accuracy of 99.75%** during the training phase.
+- An **accuracy of 99.75%** during the training phase.
 - A high accuracy of **90.0% on the testing dataset**.
 
 These results demonstrate the KNN model's ability to generalize effectively and identify meaningful patterns in consumer preferences. The model’s high accuracy underscores its robustness, making it a valuable tool for deriving actionable insights in the clothing industry.

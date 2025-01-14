@@ -15,11 +15,11 @@ To predict consumer choices, a **K-Nearest Neighbors (KNN)** predictive model wa
 Data was collected via structured surveys targeting Malaysian consumers. The survey included demographic variables such as **age**, **gender**, and **income**, alongside questions designed to capture preferences and behaviors related to apparel shopping. This dataset forms the basis for identifying behavioral trends and developing actionable marketing strategies.
 
 ## Results
-The study analyzed user preferences for H&M, Uniqlo, and Brand Outlet. To evaluate the performance of the predictive model, **K-Fold Cross-Validation (KF-CV)** with **k=5** was applied. The dataset was split into five folds, ensuring all data points were used for both training and testing during the validation process. 
+The study analyzed user preferences for H&M, Uniqlo, and Brand Outlet. To evaluate the performance of the predictive model, **K-Fold Cross-Validation (KF-CV)** with **k=5** was applied. The dataset was split into five folds, ensuring all data points were used for both training and testing during the validation process.
 
 The final model was chosen based on the iteration with the **highest testing accuracy**, ensuring robust performance on unseen data. Key results include:
-- An **accuracy of 99.75%** during the training phase.
-- A high accuracy of **90.0% on the testing dataset**.
+- An **average training accuracy of 99.81%** across all folds.
+- An **average testing accuracy of 92.10%** across all folds.
 
 These results demonstrate the KNN model's ability to generalize effectively and identify meaningful patterns in consumer preferences. The model’s high accuracy underscores its robustness, making it a valuable tool for deriving actionable insights in the clothing industry.
 

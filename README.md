@@ -17,7 +17,7 @@ Data was collected via structured surveys targeting Malaysian consumers. The sur
 ## Results
 The study analyzed user preferences for H&M, Uniqlo, and Brand Outlet. To evaluate the performance of the predictive model, **K-Fold Cross-Validation (KF-CV)** with **k=5** was applied. The dataset was split into five folds, ensuring all data points were used for both training and testing during the validation process.
 
-The final model was chosen based on the iteration with the **highest testing accuracy**, ensuring robust performance on unseen data. Key results include:
+The purpose is to evaluate the model's reliability and robustness. Hence, the key results include:
 - An **average training accuracy of 99.81%** across all folds.
 - An **average testing accuracy of 92.10%** across all folds.
 

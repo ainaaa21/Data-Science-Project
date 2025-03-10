@@ -34,5 +34,3 @@ This research offers significant value for businesses by enabling them to:
 - **Tailor marketing strategies** to align with consumer preferences.
 - **Enhance brand positioning** to appeal to specific demographics.
 - **Stay competitive** in a dynamic retail environment by leveraging data-driven insights.
-
-By identifying the factors that drive consumer decisions, this study equips retailers with the tools to better meet customer expectations and improve brand loyalty in a competitive market.

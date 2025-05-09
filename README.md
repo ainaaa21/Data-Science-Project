@@ -1,7 +1,7 @@
 # 👕 **Predictive Consumer Preference Analysis for Clothing Brands in Malaysia**
 
 ## 📌 Project Overview  
-This personal project explores how data science and machine learning techniques can be applied to analyze and predict **consumer brand preferences** in the Malaysian retail market. It simulates a real-world scenario where consumers choose between three popular apparel brands: **H&M**, **Uniqlo**, and **Brands Outlet**.
+This project explores how data science and machine learning techniques can be applied to analyze and predict **consumer brand preferences** in the Malaysian retail market. It simulates a real-world scenario where consumers choose between three popular apparel brands: **H&M**, **Uniqlo**, and **Brands Outlet**.
 
 The aim is to demonstrate understanding of predictive modeling by analyzing key decision factors, including:  
 - **Price** 💰 – Affordability and value-for-money perception  

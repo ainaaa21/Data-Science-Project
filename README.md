@@ -1,57 +1,58 @@
-# 👕 **Predictive Consumer Preference Analysis for Clothing Brands in Malaysia**  
+# 👕 **Predictive Consumer Preference Analysis for Clothing Brands in Malaysia**
 
-## 📌 **Project Overview**  
-This project investigates consumer preferences and decision-making processes among Malaysian buyers, focusing on their selection between three popular apparel brands: **H&M**, **Uniqlo**, and **Brands Outlet**.  
+## 📌 Project Overview  
+This personal project explores how data science and machine learning techniques can be applied to analyze and predict **consumer brand preferences** in the Malaysian retail market. It simulates a real-world scenario where consumers choose between three popular apparel brands: **H&M**, **Uniqlo**, and **Brands Outlet**.
 
-The study employs a combination of qualitative and quantitative methods to uncover key factors influencing consumer decisions, including:  
-- **Price** 💰: Affordability and value-for-money perception.  
-- **Perceived Quality** 🏆: Durability and reliability of products.  
-- **Style Preferences** 👗: Alignment with fashion trends and personal choices.  
-- **Brand Image** 🏢: Reputation and consumer perception of the brand.  
+The aim is to demonstrate understanding of predictive modeling by analyzing key decision factors, including:  
+- **Price** 💰 – Affordability and value-for-money perception  
+- **Perceived Quality** 🏆 – Durability and reliability of products  
+- **Style Preferences** 👗 – Alignment with fashion trends and personal taste  
+- **Brand Image** 🏢 – Reputation and consumer perception
 
-To predict consumer choices, a **K-Nearest Neighbors (KNN)** model was developed, leveraging these factors as input variables.  
-
----
-
-## 📊 **Data Collection**  
-The dataset was collected via structured surveys targeting Malaysian consumers. It includes demographic information such as **age, gender, and income**, along with responses related to shopping preferences. This dataset provides valuable insights into behavioral trends and serves as a foundation for data-driven marketing strategies.  
+A **K-Nearest Neighbors (KNN)** classifier was developed using these features to predict brand preferences.
 
 ---
 
-## 🤖 **Model Experimentation & Selection**  
-To identify the best-performing model, **hyperparameter tuning** was conducted using different values of:  
-- **p (1,2)**: Determines the Minkowski distance metric (Manhattan or Euclidean).  
-- **n (1-10)**: Number of neighbors for classification.  
-
-After testing multiple configurations, the optimal model was found to be:  
-- **Best Model:** `p=1`, `n=4`  
-- **Reason for Selection:** Achieved the **highest mean test accuracy of 94.2%**.  
-- **Overfitting Check:** The gap between training accuracy (**95.75%**) and testing accuracy (**94.2%**) was minimal, indicating **low overfitting**.  
-- **Standard Deviation:** **1.35**, showing stable performance across different K-Fold validation sets.  
+## 📊 Data Collection  
+A mock survey-style dataset was constructed to resemble real consumer data. It includes demographic attributes like **age**, **gender**, and **income**, along with consumer opinions on brand selection criteria. This simulated data serves as the foundation for applying machine learning classification methods.
 
 ---
 
-## 📈 **Results & Model Performance**  
-To ensure model reliability and robustness, **5-Fold Cross-Validation (KF-CV)** was applied, ensuring that all data points were used for both training and testing. The final model achieved:  
-- 📌 **Training Accuracy:** **95.75%**  
-- 📌 **Testing Accuracy:** **94.2%**  
-- 📌 **Standard Deviation (1.35):** A low value suggests that model performance is stable across different data splits.  
+## 🤖 Model Experimentation & Selection  
+To assess model performance, **hyperparameter tuning** was performed by varying:  
+- `p` (1, 2): Distance metric (Manhattan or Euclidean)  
+- `n` (1–10): Number of nearest neighbors
 
-These results demonstrate that the KNN model generalizes well and successfully identifies consumer preferences with high accuracy.  
-
----
-
-## 🎯 **Project Goals**  
-- 📌 **Understand consumer preferences** in the Malaysian retail market.  
-- 📌 **Develop predictive models** to forecast brand choices.  
-- 📌 **Provide actionable insights** for marketing and brand strategy optimization.  
+### 🔍 Best Model Configuration  
+- **p = 1**, **n = 4**  
+- **Training Accuracy:** 95.75%  
+- **Testing Accuracy:** 94.2%  
+- **Standard Deviation (K-Fold):** 1.35  
+- **Overfitting Check:** Small train-test accuracy gap indicates good generalization
 
 ---
 
-## 📢 **Business Impact**  
-This research provides **valuable insights** for businesses to:  
-- 🎯 **Tailor marketing strategies** to match consumer behavior.  
-- 🎯 **Enhance brand positioning** to attract the right target audience.  
-- 🎯 **Stay competitive** by leveraging data-driven decision-making.  
+## 📈 Results & Model Performance  
+The model was evaluated using **5-Fold Cross-Validation** to ensure robustness:  
+- ✅ **Training Accuracy:** 95.75%  
+- ✅ **Testing Accuracy:** 94.2%  
+- ✅ **Low Variance:** Standard deviation of 1.35 confirms consistent performance
 
-🚀 _This project highlights how machine learning can empower businesses in understanding and predicting consumer behavior!_  
+---
+
+## 🎯 Project Goals  
+- 📌 Practice a complete machine learning pipeline (from data prep to evaluation)  
+- 📌 Simulate consumer behavior analysis with classification models  
+- 📌 Understand key ML concepts such as hyperparameter tuning and cross-validation
+
+---
+
+## 📢 Potential Business Relevance *(Hypothetical)*  
+If applied in a real-world setting, this approach could:  
+- 🎯 Help brands tailor marketing strategies to consumer behavior  
+- 🎯 Guide data-driven brand positioning and outreach  
+- 🎯 Improve decision-making in retail through customer insights
+
+---
+
+🚀 *This project showcases how machine learning can be used to simulate real-world applications and gain practical insights into data science workflows.*

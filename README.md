@@ -33,7 +33,7 @@ Performed in [Data Analysis.ipynb](notebooks/Data%20Analysis.ipynb) to identify 
 - 👕 **Brands Outlet** is the most preferred among teenagers aged **13–20**.
 - 🧥 **H&M** shows strong preference among young adults aged **20–28**.
 - 🧢 **Uniqlo** is preferred by both **13–20** and **20–28** groups, with balanced distribution.
-- 👵 Older age groups (28–44) are less represented in the dataset, suggesting the brands mainly appeal to younger consumers.
+- 👵 Older age groups (28–44) are less represented, suggesting the brands mainly appeal to younger consumers.
 
 #### 📈 Monthly Expenses by Age and Gender
 <p align="center">
@@ -41,9 +41,9 @@ Performed in [Data Analysis.ipynb](notebooks/Data%20Analysis.ipynb) to identify 
 </p>
 
 **Insights:**
-- 📉 Majority of respondents are in the **15–25 age range** with moderate spending (RM300–RM1000).
-- 👩‍🦰 Both **male and female** respondents show similar spending patterns.
-- 💸 A few individuals spend **above RM1500**, usually aged **30+**, but they are rare.
+- 📉 Most respondents are aged **15–25** with spending around **RM300–RM1000**.
+- 👩‍🦰 Both genders show **similar spending trends**.
+- 💸 Higher spenders (RM1500+) are older but less frequent.
 
 #### 📎 Correlation: Monthly vs Clothes Expenses by Brand
 <p align="center">
@@ -51,9 +51,9 @@ Performed in [Data Analysis.ipynb](notebooks/Data%20Analysis.ipynb) to identify 
 </p>
 
 **Insights:**
-- 📊 There’s a **positive correlation** between monthly expenses and clothes expenses.
-- 🟢 **Uniqlo** buyers tend to spend more on clothes, especially at higher income levels.
-- 🔴 **Brands Outlet** has lower clothes expenditure overall, suggesting it appeals to more budget-conscious consumers.
+- 📊 **Positive correlation** between overall monthly and clothing-specific expenses.
+- 🟢 **Uniqlo** buyers spend more on clothing, often with higher income.
+- 🔴 **Brands Outlet** suits lower spenders, hinting at price-sensitive market.
 
 #### 🧾 Average Clothes Spending by Age Group
 <p align="center">
@@ -61,9 +61,9 @@ Performed in [Data Analysis.ipynb](notebooks/Data%20Analysis.ipynb) to identify 
 </p>
 
 **Insights:**
-- 📈 Clothes spending **increases with age**, peaking at **RM483.33** for the **37–44** age group.
-- 👦 Younger age groups (13–20, 21–28) spend less on clothing, likely due to lower income or allowance.
-- 🧓 Older respondents, although fewer, show **greater purchasing power**, possibly due to stable income.
+- 📈 Spending increases with age, peaking at **RM483.33** in the **37–44** category.
+- 👶 Younger groups (13–20) spend less, likely due to **allowance limitations**.
+- 🧓 Older consumers exhibit **higher purchasing power**.
 
 #### 👚 Purchased Clothing Types by Brand
 <p align="center">
@@ -71,12 +71,10 @@ Performed in [Data Analysis.ipynb](notebooks/Data%20Analysis.ipynb) to identify 
 </p>
 
 **Insights:**
-- **Brands Outlet** is strongly associated with **sports wear** purchases.
-- **H&M** is preferred for **casual wear**.
-- **Uniqlo** dominates in **formal wear** purchases.
-- Indicates that clothing **type preferences align with each brand's identity**.
-
----
+- 🏃‍♂️ **Brands Outlet** = **sportswear**
+- 🧥 **H&M** = **casual wear**
+- 👔 **Uniqlo** = **formal wear**
+- 🔍 Clothing types align closely with **brand identity**.
 
 #### 💵 Price Importance vs Employment Status
 <p align="center">
@@ -84,11 +82,9 @@ Performed in [Data Analysis.ipynb](notebooks/Data%20Analysis.ipynb) to identify 
 </p>
 
 **Insights:**
-- **Unemployed respondents** emphasize price as **very important**.
-- **Employed individuals** show a broader mix but tend to find price **moderately important** or **not important**.
-- Suggests **income influences price sensitivity**.
-
----
+- 👨‍🎓 **Unemployed** consumers rate price as **very important**.
+- 👩‍💼 **Employed** users consider price **less critical**.
+- 💡 Indicates price sensitivity **varies with income**.
 
 #### 🔥 Price Sensitivity vs Brand Preference (Heatmap)
 <p align="center">
@@ -96,10 +92,8 @@ Performed in [Data Analysis.ipynb](notebooks/Data%20Analysis.ipynb) to identify 
 </p>
 
 **Insights:**
-- **Brands Outlet & H&M** are mostly preferred by price-conscious shoppers.
-- **Uniqlo** tends to attract those who view price as **less important**, possibly indicating a **quality-first** perception.
-
----
+- 💰 **H&M** and **Brands Outlet** attract **price-conscious** shoppers.
+- 🌟 **Uniqlo** is favored by those who prioritize **quality over cost**.
 
 #### 🛒 Shopping Preferences vs Clothing Type
 <p align="center">
@@ -107,9 +101,9 @@ Performed in [Data Analysis.ipynb](notebooks/Data%20Analysis.ipynb) to identify 
 </p>
 
 **Insights:**
-- **Casual wear** dominates across **online and hybrid (both)** platforms.
-- **Sportswear** is more common among **in-store shoppers**.
-- Indicates **product type may influence channel preference**, useful for retail targeting.
+- 💻 **Online shoppers** lean toward **casual wear**.
+- 🏬 **In-store buyers** purchase more **sportswear**.
+- 🧠 Clothing type can influence **channel strategy** for retailers.
 
 ---
 
@@ -130,17 +124,29 @@ This method helps evaluate the model’s generalizability by rotating test sets 
 ### 🔧 Hyperparameter Tuning  
 To optimize the model, multiple combinations of KNN hyperparameters were tested:
 - Distance metrics: `p = 1` (Manhattan), `p = 2` (Euclidean)  
-- Number of neighbors: `n_neighbors` from 1 to 10
+- Number of neighbors: `n_neighbors` from 1 to 10  
+- Process executed in [Model Experiment.ipynb](notebooks/Model%20Experiment.ipynb)
 
 ---
 
-### ✅ Best Model Configuration 
-Based on [K-Fold Experiment Result.csv](data/K-Fold%20Experiment%20Result.csv), ..........
-- `p = 1`, `n_neighbors = 4`
+### ✅ Best Model Configuration  
+Based on [K-Fold Experiment Result.csv](data/K-Fold%20Experiment%20Result.csv), the optimal model configuration is:
+
+- `p = 1`, `n_neighbors = 4`  
 - **Training Accuracy**: 95.75%  
 - **Testing Accuracy**: 94.2%  
 - **Standard Deviation**: 1.35  
 - **Overfitting Check**: Minimal train-test gap suggests strong generalization
+
+---
+
+### 🧾 Final Model Evaluation  
+Final classification logic was implemented in [Model Classification.ipynb](notebooks/Model%20Classification.ipynb).  
+This notebook:
+- Loads the **best-performing model parameters**
+- Accepts **new data (in NumPy array format)**  
+- Predicts **brand preference** based on unseen input  
+- Demonstrates how the model could support **real-time prediction**
 
 ---
 
@@ -150,13 +156,12 @@ Evaluated using 5-Fold Cross-Validation:
 - ✅ **Testing Accuracy**: 94.2%  
 - ✅ **Low Variance**: Standard deviation of 1.35 confirms consistent performance
 
-
 ---
 
 ## 🎯 Project Goals  
 - ✅ Practice an end-to-end machine learning pipeline  
 - ✅ Simulate consumer behavior using classification  
-- ✅ Explore concepts like cross-validation and hyperparameter tuning
+- ✅ Explore concepts like cross-validation and hyperparameter tuning  
 
 ---
 
@@ -164,7 +169,7 @@ Evaluated using 5-Fold Cross-Validation:
 If applied to real-world retail data, this analysis can:  
 - 🎯 Improve brand marketing strategies by targeting age groups  
 - 🎯 Personalize recommendations for fashion consumers  
-- 🎯 Optimize product placement and promotion
+- 🎯 Optimize product placement and promotion  
 
 ---
 
